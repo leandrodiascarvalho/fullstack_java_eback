@@ -14,7 +14,7 @@ form {
     max-width: 500px; /* Largura máxima do formulário */
     margin: 0 auto; /* Centraliza o formulário horizontalmente */
     padding: 20px; /* Espaçamento interno no formulário */
-    border: 1px solid #ccc; /* Borda cinza clara */
+    border: 0,5px solid #ccc; /* Borda cinza clara */
     border-radius: 5px; /* Bordas arredondadas */
     background-color: #fff; /* Fundo branco para o formulário */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
