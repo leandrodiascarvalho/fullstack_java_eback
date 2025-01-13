@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif; /* Define a fonte padrão para o corpo da página */
+    margin: 20px; /* Adiciona margem ao redor do corpo */
+    background-color: #f4f4f4; /* Cor de fundo levemente acinzentada */
+}
+
+h1 {
+    text-align: center; /* Centraliza o título */
+    color: #333; /* Cor do título */
+    margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+form {
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário horizontalmente */
+    padding: 20px; /* Espaçamento interno no formulário */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Fundo branco para o formulário */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+label {
+    display: block; /* Faz com que as labels ocupem toda a largura */
+    margin-bottom: 5px; /* Espaçamento abaixo das labels */
+    font-weight: bold; /* Deixa as labels em negrito */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Largura total para os campos de entrada */
+    padding: 10px; /* Espaçamento interno nos campos */
+    margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 3px; /* Bordas levemente arredondadas */
+    box-sizing: border-box; /* Inclui o padding e a borda na largura total */
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Cor de fundo verde */
+    color: white; /* Cor do texto branco */
+    padding: 10px 15px; /* Espaçamento interno no botão */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 3px; /* Bordas levemente arredondadas */
+    cursor: pointer; /* Muda o cursor para "mãozinha" ao passar o mouse */
+    width: 100%; /* Largura total do botão */
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049; /* Cor de fundo verde mais escura ao passar o mouse */
+}
