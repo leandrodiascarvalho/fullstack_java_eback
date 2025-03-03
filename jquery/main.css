@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+li.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.priority-low::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f07a";
+    font-weight: 900;
+    color: green;
+    margin-right: 10px;
+}
+
+.priority-medium::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f0f3";
+    font-weight: 900;
+    color: orange;
+    margin-right: 10px;
+}
+
+.priority-high::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f024";
+    font-weight: 900;
+    color: red;
+    margin-right: 10px;
+}
+
+#prioritySelect {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-left: 10px;
+}
