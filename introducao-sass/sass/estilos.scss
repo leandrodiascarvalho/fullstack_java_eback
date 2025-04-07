@@ -1,0 +1,110 @@
+// Arquivo: style.scss
+@import 'variaveis';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $fonte-principal;
+  background-color: $cor-fundo;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// Estilos do cabeçalho
+header {
+  background-color: $cor-header;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: $padding-comum 0;
+  }
+}
+
+// Estilos do menu de navegação
+.menu {
+  display: flex;
+
+  li {
+    font-weight: bold;
+    margin-left: $espaco-menu;
+
+    a {
+      color: $cor-texto;
+      text-decoration: none;
+    }
+  }
+}
+
+// Estilos das seções
+section {
+  padding: 56px 0;
+}
+
+// Estilos da seção de produtos
+.products {
+  margin-top: $espaco-produto;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: 1%;
+  row-gap: 4%;
+  width: 100%;
+}
+
+.product-item {
+  img {
+    width: 100%;
+    border-radius: $border-radius-comum;
+  }
+}
+
+// Estilos do botão de produto
+.product-button {
+  display: block;
+  background-color: $cor-botao;
+  color: $cor-texto;
+  text-align: center;
+  padding: $padding-botao;
+  border-radius: $border-radius-botao;
+  margin-top: 8px;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $cor-botao-hover;
+  }
+}
+
+// Media queries (poderiam estar em um arquivo separado: _media.scss)
+@media screen and (max-width: 1023px) {
+  .container {
+    max-width: 80%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .products {
+    display: block;
+  }
+
+  .product-item {
+    margin-bottom: 32px;
+  }
+}
