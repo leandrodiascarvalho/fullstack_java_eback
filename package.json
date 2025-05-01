@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-image-resize": "^0.13.1"
+  }
+}
