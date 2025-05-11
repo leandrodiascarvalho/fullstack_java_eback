@@ -1,0 +1,37 @@
+@import "./core/_variables.less";
+@import "./core/_reset.less";
+@import "./core/_typography.less";
+@import "./layouts/_container.less";
+@import "./components/_header.less";
+@import "./components/_menu.less";
+@import "./components/_buttons.less";
+@import "./components/_products.less";
+
+* {
+  box-sizing: border-box;
+}
+
+section {
+  padding: @padding-secao 0;
+}
+
+@media screen and (max-width: extract(@breakpoints, tablet)) {
+  .container {
+    max-width: 80%;
+  }
+
+  .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: @espacamento-coluna-tablet;
+  }
+}
+
+@media screen and (max-width: extract(@breakpoints, mobile)) {
+  .products {
+    display: block;
+
+    .product-item {
+      margin-bottom: @margem-produto-mobile;
+    }
+  }
+}
