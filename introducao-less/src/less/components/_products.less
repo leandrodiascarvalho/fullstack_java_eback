@@ -1,0 +1,15 @@
+.products {
+  margin-top: @margem-produto-topo;
+  display: grid;
+  grid-template-columns: repeat(3, 32.66%);
+  column-gap: @espacamento-coluna-desktop;
+  row-gap: @espacamento-linha-desktop;
+  width: 100%;
+
+  .product-item {
+    img {
+      width: 100%;
+      border-radius: @raio-borda-imagem;
+    }
+  }
+}
